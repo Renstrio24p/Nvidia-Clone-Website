@@ -1,0 +1,42 @@
+
+@mixin Tablet {
+    .d-flex-center-gap-20 {
+        flex-direction: column;
+        transition: .5s;
+    }
+}
+
+@mixin Mobile {
+    .d-flex-gap-20 {
+        flex-direction: column;
+        width: 100%;
+        transition: all .5s;
+    }
+
+    .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-abs-between {
+        padding: 2px 10px;
+    }
+}
+
+@mixin Small-Mobile {
+    .font-weight-400 {
+        font-size: 6vw;
+    }
+    .d-flex-between {
+        font-size: 3vw;
+    }
+
+    .github_img,
+    .sass_img {
+       width: 20vw;
+    }
+}
+
+@mixin Smaller-Mobile {
+
+}
