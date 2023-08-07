@@ -1,8 +1,7 @@
 
-
-import Footer from "../js/footer";
-import Navbar from "../js/navbar";
-import RowList from "../js/rowlist";
+import Footer from "../js/components/footer";
+import Navbar from "../js/components/navbar";
+import RowList from "../js/components/rowlist";
 import UniqueHash from "../security/HashCode";
 
 export default function Webpage_Render() {

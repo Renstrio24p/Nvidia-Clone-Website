@@ -1,5 +1,4 @@
 
-import Footer from "../js/footer";
 import WebpageContent from "../js/webpage";
 import UniqueHash from "../security/HashCode";
 
