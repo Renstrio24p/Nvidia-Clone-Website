@@ -2,7 +2,7 @@
 
 .navbar {
 	width: 100%;
-	padding: 10px;
+	padding: 5px 10px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -32,7 +32,7 @@
 .banner {
 	width: 100%;
 	height: fit-content;
-	background-image: url('../../images/geforce.png');
+	background-image: url('../../images/rtx-40.jpeg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -53,7 +53,7 @@
 .rowlist {
 	display: grid;
 	grid-template-columns: repeat(4, 269px);
-	height: 900px;
+	height: fit-content;
 	width: 100%;
 	padding: 30px;
 	gap: 50px;
@@ -64,12 +64,15 @@
 .box {
 	background-color: rgba(0, 0, 0, 0.37);
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-	padding: 10px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	color: #fff;
 	flex-direction: column;
+}
+
+.rtx30 {
+	width: 100%;
 }
 
 .overlay {
@@ -89,13 +92,34 @@
 	gap: 10px;
 }
 
+.row:nth-child(9) h2 {
+	font-size: 35px;
+	margin-bottom: 5px;
+	padding: 20px;
+
+}
+
+.row:nth-child(9) p {
+	font-size: 15px;
+	padding: 20px;
+}
+
 .row:nth-child(10){
 	background-color: #a09f9f;
 	color: black;
+	padding: 0;
+}
+
+.row:nth-child(10) h2 {
+	font-size: 30px;
+}
+
+.row:nth-child(10) p {
+	padding: 20px;
 }
 
 .game {
-	width: 50%;
+	width: 100%;
 }
 
 .button {
@@ -104,6 +128,18 @@
 	border: none;
 	font-weight: 500;
 	font-family: 'Poppins',sans-serif;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	margin: 10px;
+}
+
+.button, .button2 {
+	cursor: pointer;
+}
+
+.button:hover,
+.button2:hover {
+	background-color: rgb(153, 204, 72);
+	transition: .5s;
 }
 
 .button2 {

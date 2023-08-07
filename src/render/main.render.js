@@ -1,6 +1,7 @@
 
+import Footer from "../js/footer";
 import WebpageContent from "../js/webpage";
-import UniqueHash from "./HashCode";
+import UniqueHash from "../security/HashCode";
 
 export default function Render() {
     // Get Render's ID

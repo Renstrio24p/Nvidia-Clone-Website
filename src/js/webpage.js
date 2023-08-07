@@ -1,14 +1,10 @@
+import Webpage_Render from '../render/webpage.render'
 import styles from '../sass/modules/app.module.scss'
+
 export default function WebpageContent(DOM){
 
     DOM.innerHTML = (`
-        <nav class='${styles.navbar}'>
-            <div class='${styles['logo-container']}'>
-                <img class='${styles.logo}' src='nvidia.png' alt='nvidia logo' />
-                <h1>Gaming Store</h1>
-            </div>
-            <p>Login / Register</p>
-        </nav>
+        <nav id='navbar' class='${styles.navbar}'></nav>
         <main>
             <div class='${styles.banner}'>
                 <div class='${styles.overlay}'>
@@ -25,54 +21,10 @@ export default function WebpageContent(DOM){
                     <button class='${styles.button2}'>See more details</button>
                 </div>
             </div>
-            <div class='${styles.rowlist}'>
-                <div class='${styles.row} ${styles.box}'>
-                    Box 1
-                    <button type='button' class='${styles.button}'>Learn more</button>
-                </div>
-                <div class='${styles.row} ${styles.box}'>
-                    Box 2
-                    <button type='button' class='${styles.button}'>Learn more</button>
-                </div>
-                <div class='${styles.row} ${styles.box}'>
-                    Box 3
-                    <button type='button' class='${styles.button}'>Learn more</button>
-                </div>
-                <div class='${styles.row} ${styles.box}'>
-                    Box 4
-                    <button type='button' class='${styles.button}'>Learn more</button>
-                </div>
-                <div class='${styles.row} ${styles.box}'>
-                    Box 5
-                    <button type='button' class='${styles.button}'>Learn more</button>
-                </div>
-                <div class='${styles.row} ${styles.box}'>
-                    Box 6
-                    <button type='button' class='${styles.button}'>Learn more</button>
-                </div>
-                <div class='${styles.row} ${styles.box}'>
-                    Box 7
-                    <button type='button' class='${styles.button}'>Learn more</button>
-                </div>
-                <div class='${styles.row} ${styles.box}'>
-                    Box 8
-                    <button type='button' class='${styles.button}'>Learn more</button>
-                </div>
-                <div class='${styles.row}'>
-                <img class='${styles.game}' src='resident.png' alt='game logo' />
-                    <h2>Nvidia Games</h2>
-                    <p>NVIDIA RTX™ and NVIDIA Omniverse™ deliver the performance 
-                    to help professionals, creators, developers, and students worldwide
-                     enhance creative workflows and build, operate, and connect metaverse
-                      applications.</p>
-                </div>
-                <div class='${styles.row} ${styles.box}'>Box 10</div>
-            </div>
+            <div id='rowlist' class='${styles.rowlist}'></div>
          
         </main>
-        <footer class='${styles.footer}'>
-            <p>&copy; copyright 2023 | Waren Gador</p>
-        </footer>
+        <footer id='footer' class='${styles.footer}'></footer>
     `)
-
+    Webpage_Render();
 }

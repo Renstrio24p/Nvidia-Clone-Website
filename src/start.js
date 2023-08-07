@@ -1,6 +1,6 @@
 import classNames from "classnames/bind";
 import styles from './sass/modules/app.module.scss'
-import Render from "./security/Render";
+import Render from "./render/main.render";
 
 export const cx = classNames.bind(styles);
 
