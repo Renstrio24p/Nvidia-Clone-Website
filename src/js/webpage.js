@@ -26,5 +26,6 @@ export default function WebpageContent(DOM){
         </main>
         <footer id='footer' class='${styles.footer}'></footer>
     `)
+    
     Webpage_Render();
 }

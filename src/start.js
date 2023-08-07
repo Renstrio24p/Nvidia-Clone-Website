@@ -5,13 +5,12 @@ import Render from "./render/main.render";
 export const cx = classNames.bind(styles);
 
 export default function Start(DOM) {
+
     const FontAwesome = document.createElement('script');
     FontAwesome.src = 'https://kit.fontawesome.com/6b203b1712.js';
     FontAwesome.crossOrigin = 'anonymous';
     document.head.append(FontAwesome);
 
-    
- 
     DOM.innerHTML = (
         `
         <div id='container'> 
@@ -21,5 +20,5 @@ export default function Start(DOM) {
         `
     )
 
-  Render(); // Renders all the Element ID's
+  Render(); 
 }
