@@ -49,7 +49,7 @@ export default function RowList(DOM){
                 Industrial and the commercial Jetson AGX Orin modules, by bringing server-class
                 performance to ruggedized systems.
             </p>
-            <i class="fa-solid fa-angle-down"></i> <p>Quick Links</p>
+            <p> <i class="fa-solid fa-angle-down ${styles.angle}"></i> Quick Links</p>
         </div>
         <div class='${styles.row} ${styles.box}'>
             <img class='${styles.game}' src='resident.png' alt='game logo' />
