@@ -178,3 +178,12 @@
 	justify-content: center;
 	align-items: center;
 }
+
+.footer div {
+	display: flex;
+	gap: 10px
+}
+
+.footer .nvidia {
+	width: 150px;
+}
