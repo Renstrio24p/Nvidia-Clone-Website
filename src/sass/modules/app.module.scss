@@ -152,12 +152,12 @@
 
 .button, .button2 {
 	cursor: pointer;
+	transition: .5s;
 }
 
 .button:hover,
 .button2:hover {
-	background-color: rgb(153, 204, 72);
-	transition: .5s;
+	background-color: rgb(179, 212, 126);
 }
 
 .button2 {
