@@ -3,18 +3,18 @@ import styles from '../../sass/modules/app.module.scss';
 export default function RowList(DOM) {
 	DOM.innerHTML = `
         <div class='${styles.row} ${styles.box}'>
-            <img class='${styles.rtx30}' src='rtx-30.jpeg' alt='rtx 30' />
-            <p>RTX Series</p>
+            <img class='${styles.rtx30}' src='tv.jpeg' alt='tv shield image' />
+            <p>Shield TV's</p>
             <button type='button' class='${styles.button}'>Learn more</button>
         </div>
         <div class='${styles.row} ${styles.box}'>
             <img class='${styles.rtx30}' src='rtx-40.jpeg' alt='rtx 30' />
-            <p>RTX Series</p>
+            <p>RTX 40 Series</p>
             <button type='button' class='${styles.button}'>Learn more</button>
         </div>
         <div class='${styles.row} ${styles.box}'>
             <img class='${styles.rtx30}' src='rtx-30.jpeg' alt='rtx 30' />
-            <p>RTX Series</p>
+            <p>RTX 30 Series</p>
             <button type='button' class='${styles.button}'>Learn more</button>
         </div>
         <div class='${styles.row} ${styles.box}'>
@@ -23,23 +23,23 @@ export default function RowList(DOM) {
             <button type='button' class='${styles.button}'>Learn more</button>
         </div>
         <div class='${styles.row} ${styles.box}'>
-            <img class='${styles.rtx30}' src='rtx-30.jpeg' alt='rtx 30' />
-            <p>RTX Series</p>
+            <img class='${styles.rtx30}' src='connectx.jpg' alt='connect x image' />
+            <p>ConnectX SmartNICs</p>
             <button type='button' class='${styles.button}'>Learn more</button>
         </div>
         <div class='${styles.row} ${styles.box}'>
-            <img class='${styles.rtx30}' src='rtx-30.jpeg' alt='rtx 30' />
-            <p>RTX Series</p>
+            <img class='${styles.rtx30}' src='linkx.jpg' alt='ethernet link x' />
+            <p>Link X Ethernet</p>
             <button type='button' class='${styles.button}'>Learn more</button>
         </div>
         <div class='${styles.row} ${styles.box}'>
-            <img class='${styles.rtx30}' src='rtx-40.jpeg' alt='rtx 30' />
-            <p>RTX Series</p>
+            <img class='${styles.rtx30}' src='switch.jpg' alt='switch image' />
+            <p>Spectrum Switch Series</p>
             <button type='button' class='${styles.button}'>Learn more</button>
         </div>
         <div class='${styles.row} ${styles.box}'>
-            <img class='${styles.rtx30}' src='rtx-40.jpeg' alt='rtx 30' />
-            <p>RTX Series</p>
+            <img class='${styles.rtx30}' src='bluefield.jpg' alt='bluefield dpu' />
+            <p>Blue Field DPU Network</p>
             <button type='button' class='${styles.button}'>Learn more</button>
         </div>
         <div class='${styles.row}'>
