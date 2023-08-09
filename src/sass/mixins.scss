@@ -1,39 +1,76 @@
 
 @mixin Tablet {
-    .d-flex-center-gap-20 {
+
+    .overlay {
+        display: flex;
         flex-direction: column;
-        transition: .5s;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rowlist {
+        grid-template-columns: repeat(3,269px);
+    }
+
+    .row:nth-child(10){
+        grid-column-start: 1;
+	    grid-column-end: 4;
+    }
+}
+
+@mixin Mini-Tablet {
+
+    .rtx-info {
+        width: 100%;
+    }
+    
+    .rowlist {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .row:nth-child(9),
+    .row:nth-child(10){
+        grid-column-start: 1;
+	    grid-column-end: 3;
+    }
+
+    
+}
+
+@mixin Screen-Mobile {
+    .row:nth-child(9){
+        flex-direction: column;
+    }
+
+    .row:nth-child(9) p {
+        font-size: 15px;
     }
 }
 
 @mixin Mobile {
-    .d-flex-gap-20 {
-        flex-direction: column;
+
+    .banner h2 {
+        margin-top: 40px;
+        font-size: 35px;
+    }
+
+    .rtx-info {
         width: 100%;
-        transition: all .5s;
     }
 
-    .box {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .footer-abs-between {
-        padding: 2px 10px;
-    }
-}
-
-@mixin Small-Mobile {
-    .font-weight-400 {
-        font-size: 6vw;
-    }
-    .d-flex-between {
-        font-size: 3vw;
+    .rowlist {
+        grid-template-columns: repeat(1,1fr);
     }
 
-    .github_img,
-    .sass_img {
-       width: 20vw;
+    .row:nth-child(9),
+    .row:nth-child(10){
+        grid-column-start: 1;
+	    grid-column-end: 2;
+        flex-direction: column;
+    }
+
+    .row:nth-child(9) p {
+        font-size: 15px;
     }
 }
 

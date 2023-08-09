@@ -187,3 +187,19 @@
 .footer .nvidia {
 	width: 150px;
 }
+
+@media only screen and (max-width:1246px){
+	@include Tablet;
+}
+
+@media only screen and (max-width:928px) {
+	@include Mini-Tablet;
+}
+
+@media only screen and (max-width:811px) {
+	@include Screen-Mobile;
+}
+
+@media only screen and (max-width: 574px) {
+	@include Mobile;
+}
