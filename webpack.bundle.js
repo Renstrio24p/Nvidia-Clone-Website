@@ -180,7 +180,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sta
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Footer)\n/* harmony export */ });\n/* harmony import */ var _sass_modules_app_module_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../sass/modules/app.module.scss */ \"./src/sass/modules/app.module.scss\");\n\n\nfunction Footer(DOM) {\n\tDOM.innerHTML = `\n        <div>\n            <img class='${_sass_modules_app_module_scss__WEBPACK_IMPORTED_MODULE_0__[\"default\"].nvidia}' src='nvidia-footer.svg' alt='nvidia' />\n            <p>&copy; copyright 2023 | Waren Gador</p> \n        </div>\n    `;\n}\n\n\n//# sourceURL=webpack://standalone-javascript/./src/js/components/footer.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Footer)\n/* harmony export */ });\n/* harmony import */ var _sass_modules_app_module_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../sass/modules/app.module.scss */ \"./src/sass/modules/app.module.scss\");\n\n\nfunction Footer(DOM) {\n\tDOM.innerHTML = `\n        <div>\n            <img class='${_sass_modules_app_module_scss__WEBPACK_IMPORTED_MODULE_0__[\"default\"].nvidia}' src='nvidia-footer.svg' alt='nvidia' />\n            <p>&copy; copyright 2023 | <b>Waren Gador<b></p> \n        </div>\n    `;\n}\n\n\n//# sourceURL=webpack://standalone-javascript/./src/js/components/footer.js?");
 
 /***/ }),
 
