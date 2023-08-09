@@ -1,79 +1,96 @@
-
 @mixin Tablet {
+	.overlay {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 
-    .overlay {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+	.rowlist {
+		grid-template-columns: repeat(3, 269px);
+	}
 
-    .rowlist {
-        grid-template-columns: repeat(3,269px);
-    }
-
-    .row:nth-child(10){
-        grid-column-start: 1;
-	    grid-column-end: 4;
-    }
+	.row:nth-child(10) {
+		grid-column-start: 1;
+		grid-column-end: 4;
+	}
 }
 
 @mixin Mini-Tablet {
+	.rtx-info {
+		width: 100%;
+	}
 
-    .rtx-info {
-        width: 100%;
-    }
-    
-    .rowlist {
-        grid-template-columns: repeat(2,1fr);
-    }
+	.rowlist {
+		grid-template-columns: repeat(2, 1fr);
+	}
 
-    .row:nth-child(9),
-    .row:nth-child(10){
-        grid-column-start: 1;
-	    grid-column-end: 3;
-    }
-
-    
+	.row:nth-child(9),
+	.row:nth-child(10) {
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
 }
 
 @mixin Screen-Mobile {
-    .row:nth-child(9){
-        flex-direction: column;
-    }
+	.row:nth-child(9) {
+		flex-direction: column;
+	}
 
-    .row:nth-child(9) p {
-        font-size: 15px;
-    }
+	.row:nth-child(9) p {
+		font-size: 15px;
+	}
 }
 
 @mixin Mobile {
+	.banner h2 {
+		margin-top: 40px;
+		font-size: 35px;
+	}
 
-    .banner h2 {
-        margin-top: 40px;
-        font-size: 35px;
-    }
+	.rtx-info {
+		width: 100%;
+	}
 
-    .rtx-info {
-        width: 100%;
-    }
+	.rowlist {
+		grid-template-columns: repeat(1, 1fr);
+	}
 
-    .rowlist {
-        grid-template-columns: repeat(1,1fr);
-    }
+	.row:nth-child(9),
+	.row:nth-child(10) {
+		grid-column-start: 1;
+		grid-column-end: 2;
+		flex-direction: column;
+	}
 
-    .row:nth-child(9),
-    .row:nth-child(10){
-        grid-column-start: 1;
-	    grid-column-end: 2;
-        flex-direction: column;
-    }
-
-    .row:nth-child(9) p {
-        font-size: 15px;
-    }
+	.row:nth-child(9) p {
+		font-size: 15px;
+	}
 }
 
 @mixin Smaller-Mobile {
+	.banner h2 {
+		font-size: 2vw;
+	}
+}
 
+@mixin RealmeC15 {
+	.show {
+		display: none;
+		transition-timing-function: ease-out;
+	}
+
+	.navbar {
+		flex-direction: column;
+	}
+
+	.navbar .top {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	.navbar .bar {
+		display: block;
+	}
 }

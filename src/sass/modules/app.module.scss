@@ -29,6 +29,15 @@
 	gap: 10px;
 }
 
+.navbar .bar {
+	display: none;
+}
+
+.navbar .reg{
+	display: block;
+}
+
+
 .banner {
 	width: 100%;
 	height: fit-content;
@@ -202,4 +211,15 @@
 
 @media only screen and (max-width: 574px) {
 	@include Mobile;
+}
+
+@media only screen and (max-width: 433px) {
+	@include Smaller-Mobile;
+}
+
+
+
+
+@media only screen and (max-width: 413px) {
+	@include RealmeC15;
 }
