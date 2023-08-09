@@ -66,6 +66,10 @@
 	.row:nth-child(9) p {
 		font-size: 15px;
 	}
+
+    .footer div {
+		font-size: 15px;
+	}
 }
 
 @mixin Smaller-Mobile {
@@ -76,6 +80,10 @@
 
 	.banner p {
 		font-size: 12px;
+	}
+
+    .footer div {
+		font-size: 3vw;
 	}
 }
 
@@ -119,7 +127,4 @@
 		font-size: 10px;
 	}
 
-	.footer div {
-		font-size: 12px;
-	}
 }
