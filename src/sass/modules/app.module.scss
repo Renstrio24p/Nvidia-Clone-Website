@@ -180,7 +180,6 @@
 
 .footer {
 	width: 100%;
-	padding: 40px;
 	background-color: black;
 	color: #fff;
 	display: flex;
@@ -190,11 +189,13 @@
 
 .footer div {
 	display: flex;
-	gap: 10px
+	padding: 20px;
+	gap: 10px;
+	align-items: center;
 }
 
 .footer .nvidia {
-	width: 150px;
+	width: 5em;
 }
 
 @media only screen and (max-width:1246px){
