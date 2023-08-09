@@ -1,9 +1,8 @@
-import Webpage_Render from '../render/webpage.render'
-import styles from '../sass/modules/app.module.scss'
+import Webpage_Render from '../render/webpage.render';
+import styles from '../sass/modules/app.module.scss';
 
-export default function WebpageContent(DOM){
-
-    DOM.innerHTML = (`
+export default function WebpageContent(DOM) {
+	DOM.innerHTML = `
         <nav id='navbar' class='${styles.navbar}'></nav>
         <main>
             <div class='${styles.banner}'>
@@ -25,7 +24,7 @@ export default function WebpageContent(DOM){
          
         </main>
         <footer id='footer' class='${styles.footer}'></footer>
-    `)
-    
-    Webpage_Render();
+    `;
+
+	Webpage_Render();
 }

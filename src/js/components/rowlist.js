@@ -1,8 +1,7 @@
 import styles from '../../sass/modules/app.module.scss';
 
-export default function RowList(DOM){
-
-    DOM.innerHTML = (`
+export default function RowList(DOM) {
+	DOM.innerHTML = `
         <div class='${styles.row} ${styles.box}'>
             <img class='${styles.rtx30}' src='rtx-30.jpeg' alt='rtx 30' />
             <p>RTX Series</p>
@@ -72,6 +71,5 @@ export default function RowList(DOM){
                 applications.
             </p>
         </div>
-`)
-
+`;
 }

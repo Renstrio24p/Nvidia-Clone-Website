@@ -69,24 +69,24 @@
 }
 
 @mixin Smaller-Mobile {
-	.banner h2,.banner h3 {
+	.banner h2,
+	.banner h3 {
 		font-size: 6vw;
 	}
 
-    .banner p {
-        font-size: 12px;
-    }
+	.banner p {
+		font-size: 12px;
+	}
 }
 
 @mixin RealmeC15 {
-
-    #collapsibleSection {
-		transition: ease-in .5s;
-    }
+	#collapsibleSection {
+		transition: ease-in 0.5s;
+	}
 
 	.show {
 		display: none;
-        transition: ease-out .5s;
+		transition: ease-out;
 	}
 
 	.navbar {
@@ -103,23 +103,23 @@
 		display: block;
 	}
 
-    .row:nth-child(9) {
-        h2 {
-            font-size: 6vw;
-        }
-    }
+	.row:nth-child(9) {
+		h2 {
+			font-size: 6vw;
+		}
+	}
 
-    .row:nth-child(9) {
-        p {
-            font-size: 10px;
-        }
-    }
+	.row:nth-child(9) {
+		p {
+			font-size: 10px;
+		}
+	}
 
-    .row:nth-child(10) .games-content {
-        font-size: 10px;
-    }
+	.row:nth-child(10) .games-content {
+		font-size: 10px;
+	}
 
-    .footer div {
-        font-size: 12px;
-    }
+	.footer div {
+		font-size: 12px;
+	}
 }

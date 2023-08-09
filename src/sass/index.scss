@@ -3,21 +3,21 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    transition: all .5s;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	transition: all 0.5s;
 }
 
 html {
-    font-family: 'Poppins';
+	font-family: 'Poppins';
 }
 
 h1 {
-    color : #fff;
+	color: #fff;
 }
 
 h2 {
-    font-size: 3em;
+	font-size: 3em;
 }

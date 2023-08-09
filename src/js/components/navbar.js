@@ -2,7 +2,7 @@ import styles from '../../sass/modules/app.module.scss';
 import { NavToggles } from './functions/navbar.toggle';
 
 export default function Navbar(DOM) {
-    DOM.innerHTML = (`
+	DOM.innerHTML = `
         <div class='${styles.top}'>
             <!-- Logo and title -->
             <div class='${styles['logo-container']}'>
@@ -16,7 +16,7 @@ export default function Navbar(DOM) {
         <div class='${styles.show}' id='collapsibleSection'>
                 <button type='button' id='reg' class='${styles.button} ${styles.reg}'>Login / Register</button>
         </div>
-    `);
+    `;
 
-    NavToggles();
+	NavToggles();
 }

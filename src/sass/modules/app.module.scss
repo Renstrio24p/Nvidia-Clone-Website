@@ -1,212 +1,176 @@
 @import '../mixins.scss';
-
+.banner,
+.navbar {
+	display: flex;
+	color: #fff;
+}
+.banner,
+.rowlist {
+	height: fit-content;
+}
+.navbar,
+.rowlist {
+	background-color: #1e1f1a;
+}
 .navbar {
 	width: 100%;
 	padding: 5px 20px;
-	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: rgb(30, 31, 26);
-	color: #fff;
-	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-		rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-		rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px,
+		rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0.17) 0 12px 13px,
+		rgba(0, 0, 0, 0.09) 0 -3px 5px;
 	position: fixed;
 }
-
 .navbar h1 {
 	font-weight: 500;
 	font-size: 20px;
 }
-
 .logo {
 	width: 60px;
 }
-
 .logo-container {
 	display: flex;
 	align-items: center;
 	gap: 10px;
 }
-
 .navbar .bar {
 	display: none;
 }
-
-.navbar .reg{
+.navbar .reg {
 	display: block;
 }
-
-
 .banner {
 	width: 100%;
-	height: fit-content;
 	background-image: url('../../images/rtx-40.jpeg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: #fff;
 	padding-top: 50px;
 }
-
 .rtx-info {
 	width: 40%;
 	font-size: 15px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
-
-.rowlist {
-	display: grid;
-	grid-template-columns: repeat(4, 269px);
-	height: fit-content;
-	width: 100%;
-	padding: 30px;
-	gap: 50px;
-	justify-content: center;
-	background-color: rgb(30, 31, 26);
-}
-
-.angle {
-	color: rgb(44, 206, 44)
-}
-
-.box {
-	background-color: rgba(0, 0, 0, 0.37);
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: #fff;
-	flex-direction: column;
-}
-
+.footer,
+.game,
+.overlay,
+.row:nth-child(9) .content,
+.row:nth-child(9) img,
+.rowlist,
 .rtx30 {
 	width: 100%;
 }
-
-.overlay {
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.37);
-	padding: 20px;
+.rowlist {
+	display: grid;
+	grid-template-columns: repeat(4, 269px);
+	padding: 30px;
+	gap: 50px;
+	justify-content: center;
 }
-
+.box,
+.overlay,
+.row:nth-child(10),
 .row:nth-child(9) {
-	grid-column-start: 1;
-	grid-column-end: 4;
 	background-color: rgba(0, 0, 0, 0.37);
+}
+.angle {
+	color: #2cce2c;
+}
+.box,
+.footer,
+.row:nth-child(9) {
 	color: #fff;
-	padding: 10px;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-	gap: 10px;
 	display: flex;
-	padding: 0;
 }
-
-.row:nth-child(9) .content {
-	width: 100%;
+.box {
+	box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
-
-.row:nth-child(9) img {
-	width: 100%;
-}
-
-.row:nth-child(9) h2 {
-	font-size: 30px;
-	margin-bottom: 5px;
-	padding: 20px;
-
-}
-
-.row:nth-child(9) p {
-	font-size: 10px;
+.overlay {
+	height: 100%;
 	padding: 20px;
 }
-
-.row:nth-child(9) .dropdown {
-	font-size: 15px;
-}
-
-.row:nth-child(10){
-	background-color: rgba(0, 0, 0, 0.37);
-	padding: 0;
-}
-
-.row:nth-child(10) h2 {
-	font-size: 30px;
-}
-
-.row:nth-child(10) .games-content {
-	padding: 10px;
-	font-size: 15px;
-}
-
-.game {
-	width: 100%;
-}
-
-.button {
-	padding: 10px 20px;
-	background-color: rgb(139, 207, 30);
-	border: none;
-	font-weight: 500;
-	font-family: 'Poppins',sans-serif;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-	margin: 10px;
-}
-
-.button, .button2 {
-	cursor: pointer;
-	transition: .5s;
-}
-
-.button:hover,
-.button2:hover {
-	background-color: rgb(179, 212, 126);
-}
-
+.button,
 .button2 {
 	padding: 10px 20px;
 	border: none;
 	font-weight: 500;
-	font-family: 'Poppins',sans-serif;
-	background-color: rgb(139, 207, 30);
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	font-family: Poppins, sans-serif;
+	background-color: #8bcf1e;
+	box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 }
-
+.row:nth-child(9) {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	padding: 0;
+	box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+	gap: 10px;
+}
+.row:nth-child(9) h2 {
+	font-size: 30px;
+	margin-bottom: 5px;
+	padding: 20px;
+}
+.row:nth-child(9) p {
+	font-size: 10px;
+	padding: 20px;
+}
+.row:nth-child(9) .dropdown {
+	font-size: 15px;
+}
+.row:nth-child(10) {
+	padding: 0;
+}
+.row:nth-child(10) h2 {
+	font-size: 30px;
+}
+.row:nth-child(10) .games-content {
+	padding: 10px;
+	font-size: 15px;
+}
+.button {
+	margin: 10px;
+}
+.button,
+.button2 {
+	cursor: pointer;
+	transition: 0.5s;
+}
+.button2:hover,
+.button:hover {
+	background-color: #b3d47e;
+}
 .footer {
-	width: 100%;
-	background-color: black;
-	color: #fff;
-	display: flex;
+	background-color: #000;
 	justify-content: center;
 	align-items: center;
 }
-
 .footer div {
 	display: flex;
 	padding: 20px;
 	gap: 10px;
 	align-items: center;
 }
-
 .footer .nvidia {
 	width: 5em;
 }
 
-@media only screen and (max-width:1246px){
+@media only screen and (max-width: 1246px) {
 	@include Tablet;
 }
 
-@media only screen and (max-width:928px) {
+@media only screen and (max-width: 928px) {
 	@include Mini-Tablet;
 }
 
-@media only screen and (max-width:811px) {
+@media only screen and (max-width: 811px) {
 	@include Screen-Mobile;
 }
 
@@ -217,9 +181,6 @@
 @media only screen and (max-width: 433px) {
 	@include Smaller-Mobile;
 }
-
-
-
 
 @media only screen and (max-width: 413px) {
 	@include RealmeC15;
