@@ -6,6 +6,10 @@
 		align-items: center;
 	}
 
+    .banner .overlay {
+        padding-left: 30px;
+    }
+
 	.rowlist {
 		grid-template-columns: repeat(3, 269px);
 	}
